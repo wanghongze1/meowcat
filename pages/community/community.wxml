@@ -3,7 +3,7 @@
     <view>
       <text class='top-left'>主人</text>
       <text class='top-center'>阳叔</text>
-      <image class='top-icon' src="../../images/tu.jpg" />
+      <image class='top-icon' src="../../images/shequ/tu.jpg" />
     </view>
     <view>
       <text class='top-left'>名字</text>
