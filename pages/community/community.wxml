@@ -1,2 +1,24 @@
 <!--pages/community/community.wxml-->
-<text>pages/community/community.wxml</text>
+<view class='bgcolor-cd9057'>
+    <view>
+      <text class='top-left'>主人</text>
+      <text class='top-center'>阳叔</text>
+      <image class='top-icon' src="../../images/tu.jpg" />
+    </view>
+    <view>
+      <text class='top-left'>名字</text>
+      <text class='top-center'>咖啡猫儿</text>
+    </view>
+    <view>
+      <text class='top-left'>猫品种</text>
+      <text class='top-center'>狸花猫</text>
+    </view>
+    <view>
+      <text class='top-left'>性别</text>
+      <text class='top-center'>女</text>
+    </view>
+    <view class='isflex'>
+      <text class='top-left '>特征 </text>
+      <text class='top-center '>随便一些什么的特征，我怎么知道</text>
+    </view>
+</view>
