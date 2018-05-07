@@ -19,6 +19,6 @@
     </view>
     <view class='isflex'>
       <text class='top-left '>特征 </text>
-      <text class='top-center '>随便一些什么的特征，我怎么知道</text>
+      <text class='top-center nowrap'>随便一些什么的特征，我怎么知道</text>
     </view>
 </view>
