@@ -1,2 +1,8 @@
 <!--components/timeline/timeline.wxml-->
-<text>components/timeline/timeline.wxml</text>
+<import src="topbar/topbar.wxml" />
+<scroll-view scroll-y style="height: 600px;" bindscrolltoupper="upper" bindscroll="scroll" >
+    // topbar by:doucai--明天
+    <view class="topbar">
+        <template is="topbar"/>
+    </view>
+</scroll-view>

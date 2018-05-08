@@ -1,7 +1,6 @@
-<!--components/topbar/topbar.wxml-->
-<!-- 请在scroll-view中编辑--by:xiaocai -->
-<scroll-view scroll-y style="height: 600px;" bindscrolltoupper="upper" bindscroll="scroll" >
-  <!-- 发帖 -->
+<!-- 请在scroll-view中编辑--by:doucai -->
+<template name="topbar" >
+<!-- 发帖 -->
   <view class="fatie-view {{showView?'show':'hide'}}">
     <view class="fatie" >
           <image class='top-icon-left' src="../../images/shequ/tu.jpg" />
@@ -34,5 +33,4 @@
       </view> 
   </view>
   <!-- 时间轴 -->
-</scroll-view>
-
+</template >
