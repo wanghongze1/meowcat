@@ -1,2 +1,11 @@
 <!--pages/community/community.wxml-->
-<text>pages/community/community.wxml</text>
+<!--头部  -->
+<import src="../../components/card/card.wxml"/>
+<view class="top">
+  <view class="header">热门时间轴</view>
+  <view class="post" bindtap="post">+发帖</view>
+</view>
+<!--主要内容  -->
+<view class="main">
+  <template is="card" wx:for="{{catArray}}" data="{{...item}}" wx:key="item.id"/>
+</view>
