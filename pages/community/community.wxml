@@ -1,24 +1,37 @@
 <!--pages/community/community.wxml-->
-<view class='bgcolor-cd9057'>
-    <view>
-      <text class='top-left'>主人</text>
-      <text class='top-center'>阳叔</text>
-      <image class='top-icon' src="../../images/shequ/tu.jpg" />
+<!-- 请在scroll-view中编辑--by:xiaocai -->
+<scroll-view scroll-y style="height: 600px;" bindscrolltoupper="upper" bindscroll="scroll" >
+  <!-- 发帖 -->
+  <view class="fatie-view {{showView?'show':'hide'}}">
+    <view class="fatie" >
+          <image class='top-icon-left' src="../../images/shequ/tu.jpg" />
+          <text class='username'>阳叔的咖啡猫<text>女</text></text>
+          <text class='sendTo' bindtap='sendTo'>+ 发帖</text>
     </view>
-    <view>
-      <text class='top-left'>名字</text>
-      <text class='top-center'>咖啡猫儿</text>
-    </view>
-    <view>
-      <text class='top-left'>猫品种</text>
-      <text class='top-center'>狸花猫</text>
-    </view>
-    <view>
-      <text class='top-left'>性别</text>
-      <text class='top-center'>女</text>
-    </view>
-    <view class='isflex'>
-      <text class='top-left '>特征 </text>
-      <text class='top-center nowrap'>随便一些什么的特征，我怎么知道</text>
-    </view>
-</view>
+  </view>
+  <!-- 详细信息 -->
+  <view class="bgcolor-cd9057 {{isShow?'show':'hide'}}" >
+      <view>
+        <text class='top-left'>主人</text>
+        <text class='top-center'>阳叔</text>
+        <image class='top-icon' bindtap='routerTo' src="../../images/shequ/tu.jpg" />
+      </view>
+      <view>
+        <text class='top-left'>名字</text>
+        <text class='top-center'>咖啡猫儿</text>
+      </view>
+      <view>
+        <text class='top-left'>猫品种</text>
+        <text class='top-center'>狸花猫</text>
+      </view>
+      <view>
+        <text class='top-left'>性别</text>
+        <text class='top-center'>女</text>
+      </view>
+      <view class='isflex'>
+        <text class='top-left '>特征 </text>
+        <text class='top-center nowrap'>随便一些什么的特征，我怎么知道</text>
+      </view> 
+  </view>
+  <!-- 时间轴 -->
+</scroll-view>

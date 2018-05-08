@@ -10,7 +10,9 @@ Page({
     catType:'',
     sex:'',
     catAttr:'',
-    ownImg:''
+    ownImg:'',
+    isShow:true,
+    showView:false
   },
 
   /**
@@ -67,7 +69,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
@@ -75,5 +77,33 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  // 点击跳转到。。。
+  routerTo:()=>{
+    wx.redirectTo({
+      url: '/pages/home/home'
+    })
+  },
+  // 发帖
+  sendTo:()=>{
+    console.log("发帖")
+  },
+  
+  // 滚动时触发
+  scroll: function(){
+    var that = this;
+    that.setData({
+      isShow: false,
+      showView:true
+    })
+  },
+  // 到顶部后触发
+  upper: function () {
+    console.log("123")
+    var that = this;
+    that.setData({
+      isShow: true,
+      showView: false
+    })
+  },
 })
