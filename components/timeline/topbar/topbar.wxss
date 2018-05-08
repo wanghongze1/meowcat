@@ -1,1 +1,79 @@
-/* components/topbar/topbar.wxss */
+/* components/topbar/topbar.wxss *//* pages/community/community.wxss */
+.fatie-view{
+    width: 100%;
+    height: 160rpx;
+}
+.fatie{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background: #fff;
+  padding: 36rpx;
+  color: #cd9057;
+  font-size: 30rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.fatie .top-icon-left{
+    width: 80rpx;
+    height: 80rpx;
+    margin-right:30rpx; 
+}
+.fatie .username{
+  width:480rpx;
+}
+.fatie .sendTo{
+  display: inline-block;
+}
+
+.hide{
+  display: none;  
+}
+.show{
+  display: block;
+}
+.bgcolor-cd9057{
+    background: #cd9057;
+    padding: 36rpx;
+}
+.bgcolor-cd9057 .top-left{
+    display: inline-block;
+    width: 160rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 40rpx;
+    color: #ffd9b1;
+}
+.bgcolor-cd9057 .top-center{
+    color: #fff;
+}
+.bgcolor-cd9057 .top-icon{
+    float: right;
+    margin-top: 16rpx;
+    width: 80rpx;
+    height: 80rpx;
+}
+.bgcolor-cd9057 .isflex{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: flex-start ;
+}
+.bgcolor-cd9057 .isflex .top-left{
+    margin-right: 10rpx;
+}
+.bgcolor-cd9057 .isflex .top-left,.bgcolor-cd9057 .isflex .top-center{
+    line-height: 50rpx;
+}
+.nowrap{
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+    overflow: hidden;  /** 隐藏超出的内容 **/
+}
+
