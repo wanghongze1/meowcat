@@ -1,2 +1,13 @@
 <!--components/card/card.wxml-->
-<text>components/card/card.wxml</text>
+<template name="card" >
+  <view class="section" bindtap='card'>
+    <view class="img">
+      <image src="{{img}}" mode ="scaleToFill"></image> 
+    </view>
+    <view class="info">
+      <view class="info-name">{{name}}</view>
+      <view class="info-time">{{time}}</view>
+      <view class="info-owner">{{owner}}</view>
+    </view>
+  </view>
+</template>
