@@ -1,1 +1,61 @@
 /* pages/community/community.wxss */
+/*头部  */
+.top {
+  padding: 30rpx 33rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*标题  */
+.header {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+/*发帖  */
+.post {
+  font-size: 30rpx;
+  color: #e3c0a0;
+}
+/*主要内容  */
+.main {
+  padding: 0 33rpx;
+}
+/*卡片  */
+.section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+/*图片  */
+.section .img {
+  width: 684rpx;
+  height: 340rpx;
+}
+.section .img image {
+  width: 684rpx;
+  max-height: 340rpx;
+  border-radius: 8px;
+}
+/*文字信息  */
+.section .info {
+  position: absolute;
+  width: 300rpx;
+  height: 100rpx;
+  margin-top: -50rpx;
+  margin-left: -150rpx;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+}
+.section .info view {
+  text-align: center;
+}
+.section .info-time {
+  font-size: 40rpx;
+}
+.section .info-time {
+  font-size: 28rpx;
+}
+.section .info-owner {
+  font-size: 32rpx;
+}
