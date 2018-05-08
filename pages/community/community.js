@@ -96,19 +96,35 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
-
+  onShareAppMessage: function () {
+  
   },
-  //发帖
-  post: function() {
-    wx.navigateTo({
-      url: '',
+  // 点击跳转到。。。
+  routerTo:()=>{
+    wx.redirectTo({
+      url: '/pages/home/home'
     })
   },
-  //卡片
-  card: function() {
-    wx.navigateTo({
-      url: '',
+  // 发帖
+  sendTo:()=>{
+    console.log("发帖")
+  },
+  
+  // 滚动时触发
+  scroll: function(){
+    var that = this;
+    that.setData({
+      isShow: false,
+      showView:true
     })
-  }
+  },
+  // 到顶部后触发
+  upper: function () {
+    console.log("123")
+    var that = this;
+    that.setData({
+      isShow: true,
+      showView: false
+    })
+  },
 })

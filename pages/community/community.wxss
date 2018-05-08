@@ -1,25 +1,5 @@
 /* pages/community/community.wxss */
-/*头部  */
-.top {
-  padding: 30rpx 33rpx;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/*标题  */
-.header {
-  font-size: 40rpx;
-  font-weight: 700;
-}
-/*发帖  */
-.post {
-  font-size: 30rpx;
-  color: #e3c0a0;
-}
-/*主要内容  */
-.main {
-  padding: 0 33rpx;
-}
+
 /*卡片  */
 .section {
   position: relative;
@@ -58,4 +38,42 @@
 }
 .section .info-owner {
   font-size: 32rpx;
+}
+
+.fatie-view{
+    width: 100%;
+    height: 160rpx;
+}
+.fatie{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background: #fff;
+  padding: 36rpx;
+  color: #cd9057;
+  font-size: 30rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.fatie .top-icon-left{
+    width: 80rpx;
+    height: 80rpx;
+    margin-right:30rpx; 
+}
+.fatie .username{
+  width:480rpx;
+}
+.fatie .sendTo{
+  display: inline-block;
+}
+
+.hide{
+  display: none;  
+}
+.show{
+  display: block;
 }
