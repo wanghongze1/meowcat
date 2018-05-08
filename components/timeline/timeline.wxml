@@ -1,2 +1,15 @@
 <!--components/timeline/timeline.wxml-->
-<text>components/timeline/timeline.wxml</text>
+<import src="post/post.wxml"/>
+<template name="timeline" >
+  <view class="main">
+    <view class="timeline">
+      <view class="line"></view>
+      <view class="point select"></view>
+      <view class="point"></view>
+      <view class="point"></view>
+    </view>
+    <template is="post"/>
+    <template is="post"/>
+    <template is="post"/>
+  </view>
+</template>

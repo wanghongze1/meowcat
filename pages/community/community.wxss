@@ -1,4 +1,45 @@
 /* pages/community/community.wxss */
+
+/*卡片  */
+.section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+/*图片  */
+.section .img {
+  width: 684rpx;
+  height: 340rpx;
+}
+.section .img image {
+  width: 684rpx;
+  max-height: 340rpx;
+  border-radius: 8px;
+}
+/*文字信息  */
+.section .info {
+  position: absolute;
+  width: 300rpx;
+  height: 100rpx;
+  margin-top: -50rpx;
+  margin-left: -150rpx;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+}
+.section .info view {
+  text-align: center;
+}
+.section .info-time {
+  font-size: 40rpx;
+}
+.section .info-time {
+  font-size: 28rpx;
+}
+.section .info-owner {
+  font-size: 32rpx;
+}
+
 .fatie-view{
     width: 100%;
     height: 160rpx;
@@ -36,44 +77,3 @@
 .show{
   display: block;
 }
-.bgcolor-cd9057{
-    background: #cd9057;
-    padding: 36rpx;
-}
-.bgcolor-cd9057 .top-left{
-    display: inline-block;
-    width: 160rpx;
-    height: 80rpx;
-    line-height: 80rpx;
-    font-size: 40rpx;
-    color: #ffd9b1;
-}
-.bgcolor-cd9057 .top-center{
-    color: #fff;
-}
-.bgcolor-cd9057 .top-icon{
-    float: right;
-    margin-top: 16rpx;
-    width: 80rpx;
-    height: 80rpx;
-}
-.bgcolor-cd9057 .isflex{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    align-items: flex-start ;
-}
-.bgcolor-cd9057 .isflex .top-left{
-    margin-right: 10rpx;
-}
-.bgcolor-cd9057 .isflex .top-left,.bgcolor-cd9057 .isflex .top-center{
-    line-height: 50rpx;
-}
-.nowrap{
-    text-overflow: ellipsis;
-    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
-    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
-    -webkit-line-clamp: 2; /** 显示的行数 **/
-    overflow: hidden;  /** 隐藏超出的内容 **/
-}
-

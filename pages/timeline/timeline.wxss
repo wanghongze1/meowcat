@@ -1,1 +1,180 @@
 /* pages/timeline/timeline.wxss */
+.topbar{
+  margin-bottom: 70rpx;
+  padding: 30rpx 36rpx 64rpx;
+  background: #cd9057;
+}
+.topbar .icon{
+  float: right;
+  margin-top: -10rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.topbar .line{
+
+  height: 72rpx;
+  line-height: 36rpx;
+  font-size: 36rpx;
+  color: #ffd9b1;
+}
+.topbar .left{
+  display: inline-block;
+  width: 160rpx;
+}
+.topbar .center{
+  color: #fff;
+}
+.topbar .isflex{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.topbar .isflex .left{
+  flex: 0 0 160rpx;
+  vertical-align: top;
+}
+.topbar .isflex .nowrap{
+  margin-top: -8rpx;
+  text-align: top;
+  line-height: 54rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2; /** 显示的行数 **/
+  overflow: hidden;  /** 隐藏超出的内容 **/
+}
+
+.timeline{
+  float: left;
+  position: relative;
+  width: 92rpx;
+  height: 800rpx;
+}
+.timeline .line{
+  margin: 0 auto;
+  width: 2rpx;
+  height: 100%;
+  background-color: #cd9057;
+}
+.timeline .point{
+  position: absolute;
+  top: 0;
+  left: 36rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border: 2rpx solid #cd9057;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.timeline .select{
+  top: 50rpx;
+}
+.timeline .select::after{
+  position: absolute;
+  display: block;
+  content: '';
+  left: 1rpx;
+  top: 1rpx;
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #cd9057;
+  border-radius: 50%;
+}
+
+.post{
+  float: right;
+  width: 658rpx;
+}
+.post .date{
+  margin-bottom: 20rpx;
+  font-size: 18rpx;
+  color: #cd9057;
+}
+.post .content{
+  margin-bottom: 16rpx;
+  font-size: 26rpx;
+}
+.post .img{
+  width: 574rpx;
+}
+.post .img image{
+  margin-right: 16rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+.post .img image:nth-child(3n){
+  margin-right: 0;
+}
+.post .func{
+  margin-top: -6rpx;
+  margin-bottom: 16rpx;
+}
+.post .func image{
+  margin-right: 8rpx;
+  width: 28rpx;
+  height: 24rpx;
+}
+.post .func text{
+  color: #929292;
+  line-height: 28rpx;
+  margin-right: 20rpx;
+  font-size: 20rpx;
+}
+.post .func .show{
+  display: inline-block;
+}
+.post .func .hide{
+  display: none;
+}
+.post .comment-content{
+  width: 574rpx;
+  margin-bottom: 22rpx;
+  padding: 8rpx 8rpx 8rpx 0;
+  background: #efefef;
+}
+.post .comment-content .line{
+  margin-left: 14rpx;
+  line-height: 32rpx;
+}
+.post .comment-content .line .name{
+  font-size: 22rpx;
+  color: #263238;
+}
+.post .comment-content .line .content{
+  font-size: 22rpx;
+  color: #7f8389;
+}
+.post .comment-content .me{
+  margin-top: 20rpx;
+}
+.post .comment-content .me image{
+  margin-left: 18rpx;
+  margin-right: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.post .comment-content .me input{
+  display: inline-block;
+  width: 424rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 20rpx;
+  border: none;
+  text-indent: 12rpx;
+  background-color: #fff;
+}
+.post .comment-content .me input::placeholder{
+  color: #ccc;
+}
+.post .comment-content .me text{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 14rpx;
+  width: 50rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  color: #263238;
+  font-size: 20rpx;
+}

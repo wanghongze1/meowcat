@@ -1,2 +1,26 @@
 <!--components/topbar/topbar.wxml-->
-<text>components/topbar/topbar.wxml</text>
+<template name="topbar" >
+  <view class="topbar">
+    <image class="icon" src="../../images/community/portrait.jpg" />
+    <view class="line">
+      <text class="left">主人</text>
+      <text class="center">阳叔</text>
+    </view>
+    <view class="line">
+      <text class="left">名字</text>
+      <text class="center">咖啡猫儿</text>
+    </view>
+    <view class="line">
+      <text class="left">猫品种</text>
+      <text class="center">狸花猫</text>
+    </view>
+    <view class="line">
+      <text class="left">性别</text>
+      <text class="center">女</text>
+    </view>
+    <view class="line isflex">
+      <text class="left">特征</text>
+      <text class="center nowrap">像个一年级小学生一样坐着看鸟，摇着尾巴学狗叫</text>
+    </view>
+  </view>
+</template>

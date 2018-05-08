@@ -1,2 +1,5 @@
 <!--pages/timeline/timeline.wxml-->
-<text>pages/timeline/timeline.wxml</text>
+<import src="../../components/timeline/topbar/topbar.wxml"/>
+<import src="../../components/timeline/timeline.wxml"/>
+<template is="topbar"/>
+<template is="timeline"/>
