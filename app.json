@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/timeline/timeline",
     "pages/community/community",
     "pages/home/home",
     "pages/cat/add/add",
@@ -7,7 +8,6 @@
     "pages/profile/profile",
     "pages/profile/settings/settings",
     "pages/profile/notifications/notifications",
-    "pages/profile/notices/notices",
-    "pages/timeline/timeline"
+    "pages/profile/notices/notices"
   ]
 }

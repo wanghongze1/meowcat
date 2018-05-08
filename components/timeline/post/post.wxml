@@ -1,2 +1,34 @@
 <!--components/timeline/card/post.wxml-->
-<text>components/timeline/card/post.wxml</text>
+<template name="post" >
+  <view class="post">
+    <view class="date">5月2日·下午12:37</view>
+    <view class="content">今天老子的心情不是很好，别惹我</view>
+    <view class="img">
+      <image mode="scaleToFill" src="../../images/community/portrait.jpg" />
+      <image mode="scaleToFill" src="../../images/community/portrait.jpg" />
+    </view>
+    <view class="func">
+      <image class="show" src="../../images/common/praise.png"></image>
+      <image class="hide" src="../../images/common/praise.png"></image><text>赞</text>
+      <image class="show" src="../../images/common/comment.png"></image>
+      <image class="hide" src="../../images/common/comment.png"></image><text>评论</text>
+      <image class="show" src="../../images/common/share.png"></image>
+      <image class="hide" src="../../images/common/share.png"></image><text>分享</text>
+    </view>
+    <view class="comment-content">
+      <view class="line">
+        <text class="name">用户1：</text>
+        <text class="content">评论内容1</text>
+      </view>
+      <view class="line">
+        <text class="name">用户2：</text>
+        <text class="content">评论内容2评论内容2评论内容2评论内容2评论内容2评论内容2评论内容2评论内容2评论内容2评论内容2</text>
+      </view>
+      <view class="me">
+        <image src="../../images/community/portrait.jpg"></image>
+        <input type="text" placeholder="评论" />
+        <text>发布</text>
+      </view>
+    </view>
+  </view>
+</template>
