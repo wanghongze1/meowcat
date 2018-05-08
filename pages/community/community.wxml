@@ -1,21 +1,11 @@
 <!--pages/community/community.wxml-->
 <!--头部  -->
+<import src="../../components/card/card.wxml"/>
 <view class="top">
-    <view class="header">热门时间轴</view>
-    <view class="post" bindtap="post">+发帖</view>
+  <view class="header">热门时间轴</view>
+  <view class="post" bindtap="post">+发帖</view>
 </view>
 <!--主要内容  -->
-<view class="main" wx:for="{{catArray}}" wx:key="item.id">
-    <view class="section" bindtap='card'>
-        <view class="img">
-            <image src="{{item.img}}" mode ="scaleToFill"></image> 
-        </view>
-        <view class="info">
-            <view class="info-name">{{item.name}}</view>
-            <view class="info-time">{{item.time}}</view>
-            <view class="info-owner">{{item.owner}}</view>
-        </view>
-    </view>
+<view class="main">
+  <template is="card" wx:for="{{catArray}}" data="{{...item}}" wx:key="item.id"/>
 </view>
-
- 
